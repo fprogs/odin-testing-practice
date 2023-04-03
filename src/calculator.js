@@ -7,6 +7,9 @@ const Calculator = {
   },
   divide(x, y) {
     return x / y;
+  },
+  multiply(x, y) {
+    return x * y;
   }
 }
 
