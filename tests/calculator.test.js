@@ -36,22 +36,24 @@ test("Subtact with two negative integers", () => {
   expect(Calculator.subtract(-1, -2)).toBe(1);
 });
 
-test("subtract with a positive and a negative integer", () => {
+test("Subtract with a positive and a negative integer", () => {
   expect(Calculator.subtract(-1, 2)).toBe(-3);
 });
 
-test("subtract with two floating point numbers", () => {
+test("Subtract with two floating point numbers", () => {
   expect(Calculator.subtract(1.5, 2.2)).toBeCloseTo(-0.7);
 });
 
-test("subtract with two negative integer", () => {
+test("Subtract with two negative integer", () => {
   expect(Calculator.subtract(-1.5, -2.2)).toBeCloseTo(0.7);
 });
 
-test("subtract with a positive and a negative floating point number", () => {
+test("Subtract with a positive and a negative floating point number", () => {
   expect(Calculator.subtract(-1.5, 2.2)).toBeCloseTo(-3.7);
 });
 
-test("subtract with 0", () => {
+test("Subtract with 0", () => {
   expect(Calculator.subtract(1, 0)).toBe(1);
 });
+
+
