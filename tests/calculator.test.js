@@ -83,3 +83,31 @@ test("Division with a positive and a negative floating point number", () => {
 test("Division with 0", () => {
   expect(Calculator.divide(1, 0)).toBe(Number.POSITIVE_INFINITY);
 });
+
+test("Multiplication with two positive integers", () => {
+  expect(Calculator.multiply(1, 2)).toBe(2);
+});
+
+test("Multiplication with two negative integers", () => {
+  expect(Calculator.multiply(-1, -2)).toBe(2);
+});
+
+test("Multiplication with a positive and a negative integer", () => {
+  expect(Calculator.multiply(-1, 2)).toBe(-2);
+});
+
+test("Multiplication with two floating point numbers", () => {
+  expect(Calculator.multiply(1.5, 2.2)).toBeCloseTo(3.3);
+});
+
+test("Multiplication with two negative integer", () => {
+  expect(Calculator.multiply(-1.5, -2.2)).toBeCloseTo(3.3);
+});
+
+test("Multiplication with a positive and a negative floating point number", () => {
+  expect(Calculator.multiply(-1.5, 2.2)).toBeCloseTo(-3.3);
+});
+
+test("Multiplication with 0", () => {
+  expect(Calculator.multiply(1, 0)).toBe(0);
+});
